@@ -1,0 +1,92 @@
+.homeContainer {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.homeTitle {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.homeTitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 70%;
+  width: 4px;
+  background-color: #003580;
+  border-radius: 2px;
+}
+
+/* Section constraints */
+.featured-section,
+.property-list-section {
+  width: 100%;
+  max-width: 1024px;
+}
+
+/* Make Footer always span full width */
+footer {
+  width: 100%;
+  background-color: #f8f8f8; /* Ensure it's visually clear */
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .homeContainer {
+    gap: 35px;
+    margin-top: 30px;
+    padding: 0 16px;
+  }
+
+  .homeTitle {
+    font-size: 22px;
+    padding-left: 14px;
+  }
+
+  .homeTitle::before {
+    width: 3px;
+    top: 4px;
+  }
+
+  footer {
+    padding: 32px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeContainer {
+    gap: 28px;
+    margin-top: 25px;
+    padding: 0 12px;
+  }
+
+  .homeTitle {
+    font-size: 20px;
+    padding-left: 12px;
+  }
+
+  .homeTitle::before {
+    width: 2px;
+    height: 60%;
+  }
+
+  footer {
+    padding: 28px 12px;
+  }
+}

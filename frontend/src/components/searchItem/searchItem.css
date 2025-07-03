@@ -1,0 +1,207 @@
+.searchItem {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.searchItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border-color: #0071c2;
+}
+
+.siImg {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.siImg:hover {
+  transform: scale(1.02);
+}
+
+.siDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 2;
+}
+
+.siTitle {
+  font-size: 22px;
+  color: #0071c2;
+  font-weight: 700;
+  margin-bottom: 5px;
+  transition: color 0.2s;
+}
+
+.siTitle:hover {
+  color: #005999;
+}
+
+.siDistance {
+  font-size: 14px;
+  color: #555;
+}
+
+.siTaxiOp {
+  font-size: 13px;
+  background-color: #008009;
+  color: white;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.siSubtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 8px;
+}
+
+.siFeatures {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.siCancelOp {
+  font-size: 14px;
+  color: #008009;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.siCancelOpSubtitle {
+  font-size: 13px;
+  color: #008009;
+  opacity: 0.9;
+}
+
+.siDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px;
+}
+
+.siRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.siRating > span {
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.siRating > button {
+  background-color: #003580;
+  color: white;
+  padding: 6px 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px 6px 6px 0;
+  font-size: 16px;
+  min-width: 32px;
+}
+
+.siDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.siPrice {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
+
+.siTaxOp {
+  font-size: 13px;
+  color: #666;
+}
+
+.siCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 600;
+  padding: 12px 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.2s;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.siCheckButton:hover {
+  background-color: #005a9e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.siCheckButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .searchItem {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .siImg {
+    width: 100%;
+    height: 220px;
+  }
+  
+  .siDetails {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .siRating {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  
+  .siDetailTexts {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchItem {
+    padding: 15px;
+  }
+  
+  .siDetails {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .siRating {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
