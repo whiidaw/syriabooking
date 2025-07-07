@@ -95,6 +95,14 @@
   border-radius: 8px;
   cursor: pointer;
 }
+.email-button2 {
+  background-color: #3bec67;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
   /* Responsive design */
   @media (max-width: 768px) {

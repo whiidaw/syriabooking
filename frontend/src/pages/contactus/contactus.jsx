@@ -3,7 +3,16 @@ import emailjs from 'emailjs-com';
 import './contactus.css';
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-     
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faFacebookF, 
+  faTwitter, 
+  faInstagram, 
+  faLinkedinIn, 
+  faWhatsapp
+} from '@fortawesome/free-brands-svg-icons';
+import { faMessage } from '@fortawesome/free-solid-svg-icons';
+    
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -73,15 +82,12 @@ const ContactForm = () => {
         </div>
 
         <div className="button-group">
-          <button onClick={handleWhatsAppSubmit}>
-            <svg className="whatsapp-icon" viewBox="0 0 24 24">
-              <path fill="currentColor" d="..."/>
-            </svg>
-            Send via WhatsApp
+          <button onClick={handleWhatsAppSubmit}  className="email-button2">
+            <FontAwesomeIcon icon={faWhatsapp} /> Send via WhatsApp
           </button>
 
           <button onClick={handleEmailSubmit} type="button" className="email-button">
-            📧 Send via Email
+          <FontAwesomeIcon icon={faMessage} />  Send via Email
           </button>
         </div>
       </form>

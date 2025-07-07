@@ -5,7 +5,8 @@ import {
   faSignOutAlt, 
   faSignInAlt, 
   faUserPlus,
-  faHome 
+  faHome,
+  faInfo, 
 } from '@fortawesome/free-solid-svg-icons';
 import {  faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";

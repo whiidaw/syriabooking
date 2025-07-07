@@ -23,8 +23,8 @@ const Featured = () => {
       <>
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
-            alt="Damascus skyline"
+            src="https://i.pinimg.com/736x/b6/6d/23/b66d23c9b21e86f4dfea0eaaabd37d9b.jpg"
+            alt="Damascus "
             className="featuredImg"
             onError={(e) => {
               e.target.src = 'https://via.placeholder.com/600x400?text=Damascus';
@@ -38,7 +38,7 @@ const Featured = () => {
   
         <div className="featuredItem">
           <img
-            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fenglish.aawsat.com%2Farab-world%2F5058524-damascus-governorate-invites-residents-discuss-city%25E2%2580%2599s-future&psig=AOvVaw19OekOwR2GeFHjwI7Fa_pl&ust=1750791377223000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCAzqeciI4DFQAAAAAdAAAAABAE"
+            src="https://i.pinimg.com/736x/c1/29/a4/c129a4bb4fdb0a659a10e194494aef81.jpg"
             alt="Lattakia coast"
             className="featuredImg"
             onError={(e) => {
@@ -53,7 +53,7 @@ const Featured = () => {
   
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+            src="https://i.pinimg.com/736x/75/66/57/7566572aaa41775bdfbfad2d3ad4837c.jpg"
             alt="Homs city view"
             className="featuredImg"
             onError={(e) => {
@@ -67,7 +67,7 @@ const Featured = () => {
         </div>
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+            src="https://i.pinimg.com/736x/5d/5f/b2/5d5fb253dcb903482e74bf9afdb8dc38.jpg"
             alt="Aleppo city view"
             className="featuredImg"
             onError={(e) => {
@@ -81,8 +81,8 @@ const Featured = () => {
         </div>
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
-            alt="Aleppo city view"
+            src="https://i.pinimg.com/736x/6f/8d/5f/6f8d5f01560422e5368094a679f91a13.jpg"
+            alt="Sednaya city view"
             className="featuredImg"
             onError={(e) => {
               e.target.src = 'https://via.placeholder.com/600x400?text=Sednaya';
@@ -95,7 +95,7 @@ const Featured = () => {
         </div>
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+            src="https://i.pinimg.com/736x/3b/68/10/3b68103f7acaceba92e14f4303971634.jpg"
             alt="Aleppo city view"
             className="featuredImg"
             onError={(e) => {
@@ -109,11 +109,11 @@ const Featured = () => {
         </div>
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
-            alt="Aleppo city view"
+            src="https://i.pinimg.com/736x/f9/d3/9f/f9d39f7f9293ac42b952c8b4b6a65aaf.jpg"
+            alt="Jableh city view"
             className="featuredImg"
             onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/600x400?text=Suwayda';
+              e.target.src = 'https://via.placeholder.com/600x400?text=Jableh';
             }}
           />
           <div className="featuredTitles">
@@ -123,11 +123,11 @@ const Featured = () => {
         </div>
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
-            alt="Aleppo city view"
+            src="https://i.pinimg.com/736x/07/e6/22/07e6223b82279a372c258ce19328f558.jpg"
+            alt="Tartous city view"
             className="featuredImg"
             onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/600x400?text=Suwayda';
+              e.target.src = 'https://via.placeholder.com/600x400?text=Tartous';
             }}
           />
           <div className="featuredTitles">
@@ -137,11 +137,11 @@ const Featured = () => {
         </div>
         <div className="featuredItem">
           <img
-            src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
-            alt="Aleppo city view"
+            src="https://i.pinimg.com/736x/13/0a/00/130a00e35133bf5f8566df498d7de3e2.jpg"
+            alt="Arwad"
             className="featuredImg"
             onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/600x400?text=Suwayda';
+              e.target.src = 'https://via.placeholder.com/600x400?text=Arwad';
             }}
           />
           <div className="featuredTitles">
