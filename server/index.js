@@ -29,6 +29,11 @@ mongoose.connection.on("disconnected", () => {
   console.log("mongoDB disconnected!");
 });
 
+// Test endpoint
+app.get("/", (req, res) => {
+  res.json({ message: "Syria Booking API is running!", status: "success" });
+});
+
 //middlewares
 app.use(cors())
 app.use(cookieParser())
