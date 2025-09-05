@@ -35,4 +35,6 @@ const getUsers = async (req,res,next)=>{
   } catch (err) {
     next(err);
   }
-}module.exports = { updateUser, deleteUser, getUser, getUsers };
+}
+
+module.exports = { updateUser, deleteUser, getUser, getUsers };
