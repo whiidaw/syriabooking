@@ -1,0 +1,118 @@
+/* login.css */
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 48px 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.lContainer h2 {
+  color: #003580;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.lInput {
+  height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.lInput:focus {
+  outline: none;
+  border-color: #4096ff;
+  box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.2);
+}
+
+.lButton {
+  height: 44px;
+  background-color: #0071c2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.lButton:hover {
+  background-color: #005999;
+}
+
+.lButton:disabled {
+  background-color: #aacbe6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d93025;
+  background-color: #fdecea;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-link a {
+  color: #0071c2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .lContainer {
+    padding: 36px 20px;
+    margin: 20px auto;
+  }
+
+  .lContainer h2 {
+    font-size: 22px;
+  }
+
+  .lInput, .lButton {
+    font-size: 15px;
+  }
+}

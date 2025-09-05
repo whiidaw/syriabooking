@@ -1,0 +1,117 @@
+/* register.css */
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.rContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 48px 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.rContainer h2 {
+  color: #003580;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.rInput {
+  height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.rInput:focus {
+  outline: none;
+  border-color: #4096ff;
+  box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.2);
+}
+
+.rButton {
+  height: 44px;
+  background-color: #0071c2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.rButton:hover {
+  background-color: #005999;
+}
+
+.rButton:disabled {
+  background-color: #aacbe6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d93025;
+  background-color: #fdecea;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #0071c2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .rContainer {
+    padding: 36px 20px;
+    margin: 20px auto;
+  }
+
+  .rContainer h2 {
+    font-size: 22px;
+  }
+
+  .rInput, .rButton {
+    font-size: 15px;
+  }
+}

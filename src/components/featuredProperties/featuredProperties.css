@@ -1,0 +1,145 @@
+.fp {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.fpItem {
+  flex: 1;
+  min-width: 250px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.fpItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fpImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.fpItem:hover .fpImg {
+  transform: scale(1.05);
+}
+
+.fpName {
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 15px;
+  margin-top: 5px;
+}
+
+.fpCity {
+  font-weight: 400;
+  color: #666;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.fpPrice {
+  font-weight: 600;
+  color: #222;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.fpRating {
+  display: flex;
+  align-items: center;
+  padding: 0 15px 15px;
+}
+
+.fpRating > button {
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  margin-right: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.fpRating > span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Skeleton loading */
+.fpSkeleton {
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(to right, #f6f7f8 8%, #e9ebee 18%, #f6f7f8 33%);
+  background-size: 800px 104px;
+  border-radius: 12px;
+}
+
+.fpSkeletonImg {
+  width: 100%;
+  height: 200px;
+  background: #f0f0f0;
+  border-radius: 8px 8px 0 0;
+}
+
+.fpSkeletonText {
+  height: 16px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin: 8px 15px;
+}
+
+.fpSkeletonText.short {
+  width: 60%;
+}
+
+.fpSkeletonText.medium {
+  width: 80%;
+}
+
+@keyframes shimmer {
+  0% { background-position: -468px 0 }
+  100% { background-position: 468px 0 }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .fp {
+    gap: 20px;
+  }
+  
+  .fpItem {
+    min-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .fpItem {
+    min-width: 100%;
+  }
+}

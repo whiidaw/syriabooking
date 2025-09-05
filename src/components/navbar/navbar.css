@@ -1,0 +1,161 @@
+.navbar {
+  height: 70px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+.username {
+  margin-right: 15px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navButton {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #0071c2;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navButton:hover {
+  background-color: #0061a8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navButton:active {
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px;
+    padding: 0 5px;
+  }
+
+  .navContainer {
+    padding: 0 5px;
+  }
+
+  
+
+  .logo-icon {
+    font-size: 24px; /* Keep icon visible */
+    margin-right: 0;
+  }
+
+  .username {
+    font-size: x-small;
+    margin-left: 9px;
+    color:rgb(255, 255, 255)
+  }
+
+  .navItems {
+    gap: 5px;
+  }
+
+  .navButton  {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  /* Hide button text */
+  .navButton span {
+    display: none;
+  }
+
+  /* Adjust icon positioning */
+  .navButton .fa-icon {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  /* Tooltip for buttons */
+  .navButton:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0071c2;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 48px;
+  }
+
+  .logo-icon {
+    font-size: 22px;
+  }
+
+  .navButton {
+    width: 34px;
+    height: 34px;
+    padding: 6px;
+  }
+
+  .navButton .fa-icon {
+    font-size: 15px;
+  }
+}

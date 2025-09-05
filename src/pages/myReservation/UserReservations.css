@@ -1,0 +1,115 @@
+/* UserReservations.css */
+.reservations-container {
+  max-width: 1024px;
+  margin: 20px auto;
+  padding: 0 20px;
+  color: #333;
+}
+
+.reservations-title {
+  font-size: 24px;
+  color: #003580;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reservation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reservation-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  border-left: 4px solid #0071c2;
+}
+
+.hotel-name {
+  color: #003580;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.room-info, .dates, .price {
+  margin: 8px 0;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  color: #0071c2;
+  font-size: 18px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.status.confirmed {
+  background-color: #e6f7ee;
+  color: #00a854;
+}
+
+.status.pending {
+  background-color: #fff7e6;
+  color: #fa8c16;
+}
+
+.status.cancelled {
+  background-color: #fff1f0;
+  color: #f5222d;
+}
+
+.no-reservations, .loading, .error-message {
+  text-align: center;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  color: #666;
+}
+
+.browse-link {
+  color: #0071c2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.browse-link:hover {
+  color: #005999;
+}
+
+@media (max-width: 768px) {
+  .reservations-container {
+    padding: 0 15px;
+  }
+  
+  .reservation-card {
+    padding: 15px;
+  }
+}
+.cancel-button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #c9302c;
+}
+
+.cancel-button:active {
+  background-color: #ac2925;
+}
