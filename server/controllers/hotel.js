@@ -1,5 +1,5 @@
-const Hotel = require("../models/Hotel");
-const Room = require("../models/Room");
+const Hotel = require("../models/Hotel.js");
+const Room = require("../models/Room.js");
 
 const createHotel = async (req, res, next) => {
   const newHotel = new Hotel(req.body);

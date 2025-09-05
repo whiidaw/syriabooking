@@ -8,9 +8,9 @@ const {
   getHotelRooms,
   getHotels,
   updateHotel,
-} = require("../controllers/hotel");
-const Hotel = require("../models/Hotel");
-const {verifyAdmin} = require("../utils/verifyToken");
+} = require("../controllers/hotel.js");
+const Hotel = require("../models/Hotel.js");
+const {verifyAdmin} = require("../utils/verifyToken.js");
 const router = express.Router();
 
 //CREATE

@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-const { createError } = require("../utils/error");
+const { createError } = require("../utils/error.js");
 
 const verifyToken = (req, res, next) => {
   // Check both cookie and authorization header

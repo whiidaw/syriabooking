@@ -1,7 +1,7 @@
 const express = require("express");
-const Reservation = require("../models/Reservation");
-const { verifyUser } = require("../utils/verifyToken");
-const User = require("../models/User");
+const Reservation = require("../models/Reservation.js");
+const { verifyUser } = require("../utils/verifyToken.js");
+const User = require("../models/User.js");
 // Initialize the router
 const router = express.Router();
 
