@@ -1,6 +1,6 @@
 // API Configuration
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://us-central1-bookingsy-a0ecb.cloudfunctions.net/api' // Firebase Functions URL
+  ? 'https://syriabooking-production.up.railway.app/api' // Railway backend URL
   : 'http://localhost:8800/api';
 
 export default API_BASE_URL;
