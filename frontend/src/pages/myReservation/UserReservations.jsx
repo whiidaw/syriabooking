@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import useFetch from "../../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import API_BASE_URL from "../../config";
 import "./UserReservations.css";
 
 const ReservationPage = () => {
@@ -16,11 +17,11 @@ const ReservationPage = () => {
     loading,
     error,
     reFetch,
-  } = useFetch(user ? `http://localhost:8800/api/reservations/${user._id}` : null);
+  } = useFetch(user ? `${API_BASE_URL}/reservations/${user._id}` : null);
   
  const handleCancel = async (reservationId) => {
   try {
-    await axios.delete(`http://localhost:8800/api/reservations/${reservationId}`, {
+    await axios.delete(`${API_BASE_URL}/reservations/${reservationId}`, {
       headers: {
         Authorization: `Bearer ${user.token}`,
       },

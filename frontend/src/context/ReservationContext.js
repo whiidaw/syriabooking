@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import axios from "axios";
+import API_BASE_URL from "../config";
 
 const ReservationContext = createContext();
 
@@ -11,7 +12,7 @@ export const ReservationProvider = ({ children }) => {
   const createReservation = async (reservationData) => {
     try {
       setLoading(true);
-      const { data } = await axios.post("/api/reservations", reservationData);
+      const { data } = await axios.post(`${API_BASE_URL}/reservations`, reservationData);
       setReservations([...reservations, data]);
       return data;
     } catch (error) {
@@ -24,7 +25,7 @@ export const ReservationProvider = ({ children }) => {
   const getUserReservations = async (userId) => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`/api/reservations/${userId}`);
+      const { data } = await axios.get(`${API_BASE_URL}/reservations/${userId}`);
       setReservations(data);
       return data;
     } catch (error) {

@@ -7,6 +7,7 @@ import { useContext, useState } from "react";
 import { SearchContext } from "../../context/SearchContext";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
+import API_BASE_URL from "../../config";
 import { useNavigate } from "react-router-dom";
 
 const Reserve = ({ setOpen, hotelId }) => {
@@ -73,7 +74,7 @@ const [selectedExtras, setSelectedExtras] = useState([]);
     // First mark rooms as unavailable
     await Promise.all(
       selectedRooms.map((roomId) => {
-        return axios.put(`/rooms/availability/${roomId}`, {
+        return axios.put(`${API_BASE_URL}/rooms/availability/${roomId}`, {
           dates: alldates,
         }, { withCredentials: true });
       })
@@ -104,7 +105,7 @@ const [selectedExtras, setSelectedExtras] = useState([]);
           guests: options.adult + options.children
         };
 
-        return await axios.post("/reservations", reservationData, {
+        return await axios.post(`${API_BASE_URL}/reservations`, reservationData, {
           withCredentials: true
         });
       })
