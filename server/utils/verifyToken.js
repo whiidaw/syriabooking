@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
-import { createError } from "../utils/error.js";
+const { createError } = require("../utils/error");
 
-export const verifyToken = (req, res, next) => {
+const verifyToken = (req, res, next) => {
   // Check both cookie and authorization header
   const token = req.cookies.access_token || 
                 req.headers.authorization?.split(" ")[1];
@@ -16,7 +16,7 @@ export const verifyToken = (req, res, next) => {
     next();
   });
 };
-export const verifyUser = (req, res, next) => {
+const verifyUser = (req, res, next) => {
   verifyToken(req, res, () => {
     if (req.user.id === req.params.userId || req.user.isAdmin) {
       req.userId = req.user.id; // Make user ID easily accessible
@@ -27,7 +27,7 @@ export const verifyUser = (req, res, next) => {
   });
 };
 
-export const verifyAdmin = (req, res, next) => {
+const verifyAdmin = (req, res, next) => {
   verifyToken(req, res, next, () => {
     if (req.user.isAdmin) {
       next();

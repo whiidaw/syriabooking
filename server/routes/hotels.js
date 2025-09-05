@@ -9,7 +9,7 @@ import {
   getHotels,
   updateHotel,
 } from "../controllers/hotel.js";
-import Hotel from "../models/Hotel.js";
+const Hotel = require("../models/Hotel");
 import {verifyAdmin} from "../utils/verifyToken.js"
 const router = express.Router();
 
@@ -30,4 +30,4 @@ router.get("/countByCity", countByCity);
 router.get("/countByType", countByType);
 router.get("/room/:id", getHotelRooms);
 
-export default router;
+module.exports = router;

@@ -7,7 +7,7 @@ import {
   updateRoom,
   updateRoomAvailability,
 } from "../controllers/room.js";
-import { verifyAdmin } from "../utils/verifyToken.js";
+const { verifyAdmin } = require("../utils/verifyToken");
 
 const router = express.Router();
 //CREATE
@@ -25,4 +25,4 @@ router.get("/:id", getRoom);
 
 router.get("/", getRooms);
 
-export default router;
+module.exports = router;

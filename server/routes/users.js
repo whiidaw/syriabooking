@@ -5,7 +5,7 @@ import {
   getUser,
   getUsers,
 } from "../controllers/user.js";
-import { verifyAdmin, verifyToken, verifyUser } from "../utils/verifyToken.js";
+const { verifyAdmin, verifyToken, verifyUser } = require("../utils/verifyToken");
 
 const router = express.Router();
 
@@ -33,4 +33,4 @@ router.get("/:id", verifyUser, getUser);
 //GET ALL
 router.get("/", verifyAdmin, getUsers);
 
-export default router;
+module.exports = router;

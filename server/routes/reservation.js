@@ -1,7 +1,7 @@
 import express from "express";
-import Reservation from "../models/Reservation.js";
-import { verifyUser } from "../utils/verifyToken.js";
-import User from "../models/User.js";
+const Reservation = require("../models/Reservation");
+const { verifyUser } = require("../utils/verifyToken");
+const User = require("../models/User");
 // Initialize the router
 const router = express.Router();
 
@@ -90,4 +90,4 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;
