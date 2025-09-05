@@ -1,4 +1,4 @@
-import express from "express";
+const express = require("express");
 const Reservation = require("../models/Reservation");
 const { verifyUser } = require("../utils/verifyToken");
 const User = require("../models/User");
