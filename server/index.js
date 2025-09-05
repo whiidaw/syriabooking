@@ -47,12 +47,13 @@ app.use((err, req, res, next) => {
   });
 });
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['https://bookingsy-a0ecb.web.app', 'http://localhost:3000'],
   credentials: true
 }));
 
 app.use("/api/reservations", reservationRoutes); 
-app.listen(8800, () => {
+const PORT = process.env.PORT || 8800;
+app.listen(PORT, () => {
   connect();
-  console.log("Connected to backend.");
+  console.log(`Connected to backend on port ${PORT}.`);
 });
